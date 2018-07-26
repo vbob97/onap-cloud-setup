@@ -129,7 +129,7 @@ resources:
     properties:
       count: { get_param: k8s_node_count }
       resource_def:
-        type: k8s-node.yaml
+        type: https://github.com/osinstom/onap-cloud-setup/blob/master/heat/k8s-node.yaml
         properties:
           ubuntu_1604_image: { get_param: ubuntu_1604_image }
           k8s_vm_flavor: { get_param: k8s_vm_flavor }

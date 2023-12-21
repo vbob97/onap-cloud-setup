@@ -58,7 +58,7 @@ resources:
       user_data:
         str_replace:
           params:
-            __rancher_ip_addr__: { get_parm: rancher_ip }
+            __rancher_ip_addr__: { get_param: rancher_ip }
           template:
             get_file: openstack-k8s-node.sh
 

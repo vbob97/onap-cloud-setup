@@ -60,7 +60,7 @@ resources:
           params:
             __rancher_ip_addr__: { get_parm: rancher_ip }
           template:
-            get_file: openstack-k8s-node.sh
+            get_file: https://raw.githubusercontent.com/vbob97/onap-cloud-setup/master/heat/openstack-k8s-node.sh
 
 outputs:
 
